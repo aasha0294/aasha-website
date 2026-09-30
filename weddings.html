@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Destination Weddings — Aasha Tours, Udaipur</title>
-<meta name="description" content="Destination wedding planning in Udaipur and across Rajasthan — venue, decor, catering, every function, and the travel for every guest. Aasha Tours, IATA accredited.">
+<meta name="description" content="Destination wedding planning in Udaipur, across India and overseas — venue, decor, catering, every function, and the travel for every guest. Aasha Tours, IATA accredited.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23F6F1E7'/%3E%3Cpath d='M 28 125 A 72 72 0 0 1 172 125 Z' fill='%23D99A3D'/%3E%3Cline x1='10' y1='125' x2='190' y2='125' stroke='%230E5E5B' stroke-width='8'/%3E%3Cpath d='M 40 125 A 60 20 0 0 0 160 125 Z' fill='%23D99A3D' opacity='0.28'/%3E%3Cline x1='55' y1='155' x2='145' y2='155' stroke='%230E5E5B' stroke-width='6' opacity='0.28'/%3E%3C/svg%3E">
 <meta name="theme-color" content="#F6F1E7">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Aasha Tours">
 <meta property="og:title" content="Destination Weddings — Aasha Tours, Udaipur">
-<meta property="og:description" content="Destination wedding planning in Udaipur and across Rajasthan — venue, decor, catering, every function, and the travel for every guest.">
+<meta property="og:description" content="Destination wedding planning in Udaipur, across India and overseas — venue, decor, catering, every function, and the travel for every guest.">
 <meta property="og:url" content="https://www.aashatours.com/weddings.html">
 <link rel="canonical" href="https://www.aashatours.com/weddings.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -221,6 +221,24 @@ footer { background: var(--teal-night); color: #93B5B2; padding-block: 30px; fon
 @media (max-width: 480px) { .wa-float a span { display: none; } .wa-float a { padding: 15px; } }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* --------------------------------------------------------- the opening */
+/* Sits between the hero and the claim: the promise, before the proof. */
+.opening { background: var(--paper); border-bottom: 1px solid var(--line); }
+.opening .h2 { max-width: 22ch; }
+.opening .lede { font-size: 17.5px; }
+.opening .lede + .lede { margin-top: 16px; }
+.elements { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+.elements span {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 13px; font-weight: 700; color: var(--wine);
+  background: rgba(110,37,50,.05); border: 1px solid rgba(110,37,50,.16);
+  border-radius: 999px; padding: 9px 15px;
+}
+.elements span::before {
+  content: ""; width: 5px; height: 5px; border-radius: 50%;
+  background: var(--gold); flex: none;
+}
 </style>
 </head>
 <body>
@@ -266,7 +284,7 @@ footer { background: var(--teal-night); color: #93B5B2; padding-block: 30px; fon
       <use href="#toran" x="0"/><use href="#toran" x="60"/><use href="#toran" x="120"/>
       <use href="#toran" x="180"/><use href="#toran" x="240"/><use href="#toran" x="300"/>
     </svg>
-    <p class="eyebrow">Destination weddings · Udaipur &amp; Rajasthan</p>
+    <p class="eyebrow">Destination weddings · Udaipur, India &amp; overseas</p>
     <h1>We plan the wedding, and we get <em>every single guest</em> here.</h1>
     <p class="hero-sub">
       Venue, decor, catering, every function — and the flights, visas, rooms and cars for
@@ -280,6 +298,37 @@ footer { background: var(--teal-night); color: #93B5B2; padding-block: 30px; fon
     <p class="hero-meta">Aasha Tours, Moti Magri Scheme, Udaipur &nbsp;·&nbsp; IATA accredited &nbsp;·&nbsp; <b>+91 99822 06401</b></p>
   </div>
 </div>
+
+<!-- ============================================================ opening -->
+<section class="opening">
+  <div class="wrap gutter">
+    <svg class="toran-rule" viewBox="0 0 360 34" preserveAspectRatio="xMinYMid meet" aria-hidden="true">
+      <use href="#toran" x="0"/><use href="#toran" x="60"/><use href="#toran" x="120"/>
+      <use href="#toran" x="180"/><use href="#toran" x="240"/><use href="#toran" x="300"/>
+    </svg>
+    <p class="eyebrow">Destination weddings</p>
+    <h2 class="h2">Destination weddings, <em>beautifully brought to life</em>.</h2>
+    <p class="lede">
+      A wedding deserves more than a venue. It deserves a place worth travelling to, days
+      that feel like nothing else your family has done together, and a memory people are
+      still describing twenty years from now.
+    </p>
+    <p class="lede">
+      We plan bespoke destination weddings in Udaipur, across India and overseas &mdash;
+      the location, the hospitality, the d&eacute;cor, the dining, the entertainment and the
+      running of the days themselves. One team holds all of it, so nothing on the morning
+      of the wedding depends on somebody else remembering.
+    </p>
+    <div class="elements">
+      <span>Breathtaking locations</span>
+      <span>Exceptional hospitality</span>
+      <span>Exquisite d&eacute;cor</span>
+      <span>Gourmet dining</span>
+      <span>Entertainment</span>
+      <span>Flawless execution</span>
+    </div>
+  </div>
+</section>
 
 <!-- =============================================================== claim -->
 <section class="claim">
@@ -362,7 +411,7 @@ footer { background: var(--teal-night); color: #93B5B2; padding-block: 30px; fon
       <use href="#toran" x="180"/><use href="#toran" x="240"/><use href="#toran" x="300"/>
     </svg>
     <p class="eyebrow">Where</p>
-    <h2 class="h2">Udaipur first. Then wherever in Rajasthan <em>suits the wedding</em>.</h2>
+    <h2 class="h2">Udaipur first. Then wherever <em>suits the wedding</em>.</h2>
     <p class="lede">
       Our office is in Udaipur, so we know these properties, their managers and their quiet
       truths — which lawn floods, which lake view is a lake view, which kitchen can actually
@@ -386,6 +435,13 @@ footer { background: var(--teal-night); color: #93B5B2; padding-block: 30px; fon
       <span>Farm and tented venues</span>
       <span>Temple weddings</span>
     </div>
+
+    <p class="lede" style="margin-top:28px;">
+      Beyond Rajasthan we plan weddings elsewhere in India and overseas. The team is the
+      same, the single point of contact is the same, and the flights, visas and rooms for
+      every guest stay with us — which is the part that decides whether a wedding abroad
+      works at all.
+    </p>
   </div>
 </section>
 
