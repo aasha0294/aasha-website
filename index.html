@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aasha Tours — Travel Agent in Udaipur | Flights, Visas, Tours &amp; Weddings</title>
+<meta name="description" content="IATA accredited travel agent in Udaipur for more than 15 years. Air ticketing, visa services, package tours, hotels, travel insurance, group tours and MICE — plus Rajasthan tours and destination wedding planning.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23F6F1E7'/%3E%3Cpath d='M 28 125 A 72 72 0 0 1 172 125 Z' fill='%23D99A3D'/%3E%3Cline x1='10' y1='125' x2='190' y2='125' stroke='%230E5E5B' stroke-width='8'/%3E%3Cpath d='M 40 125 A 60 20 0 0 0 160 125 Z' fill='%23D99A3D' opacity='0.28'/%3E%3Cline x1='55' y1='155' x2='145' y2='155' stroke='%230E5E5B' stroke-width='6' opacity='0.28'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#083837">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aasha Tours">
+<meta property="og:title" content="Aasha Tours — Travel Agent in Udaipur">
+<meta property="og:description" content="IATA accredited travel agent in Udaipur for more than 15 years. Air ticketing, visa services, package tours, hotels, travel insurance, group tours and MICE — plus Rajasthan tours and destination wedding planning.">
+<meta property="og:url" content="https://www.aashatours.com/">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://www.aashatours.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Manrope:wght@400;500;600;700;800&display=swap">
+
+<style>
+/* Layout: a travel house facing two ways. The page is built from arches —
+   the jharokha windows of a Udaipur haveli — each one framing a direction:
+   out of Rajasthan, into Rajasthan, and the weddings that bring people here.
+   Cream ground, teal ink, gold structure; marigold appears once, for weddings.
+   Single committed light identity — a brand site does not invert. */
+:root {
+  color-scheme: light;
+
+  --cream:      #F6F1E7;
+  --cream-lt:   #FCFAF5;
+  --paper:      #FFFFFF;
+  --teal:       #0E5E5B;
+  --teal-deep:  #0B4B49;
+  --teal-night: #083837;
+  --teal-mist:  #DCE9E8;
+  --gold:       #D99A3D;
+  --gold-lt:    #EFD4A6;
+  --marigold:   #C1592F;
+  --ink:        #2B2420;
+  --ink-soft:   #665C53;
+  --ink-faint:  #9E9487;
+  --line:       #E6DCC7;
+
+  --display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --body: 'Manrope', 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  --wrap: 1120px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--cream-lt);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; margin: 0; line-height: 1.14; text-wrap: balance; }
+p { margin: 0; }
+a { color: inherit; }
+
+.wrap { width: 100%; max-width: var(--wrap); margin-inline: auto; }
+.gutter { padding-inline: 20px; }
+section { padding-block: clamp(50px, 7vw, 88px); }
+
+.eyebrow { font-size: 11px; font-weight: 800; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-bottom: 13px; }
+.eyebrow.light { color: var(--gold-lt); }
+.eyebrow.marigold { color: #E07B4C; }
+.h2 { font-size: clamp(30px, 4.2vw, 44px); }
+.lede { font-size: 17px; color: var(--ink-soft); max-width: 62ch; margin-top: 14px; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font-family: var(--body); font-weight: 700; font-size: 14.5px; line-height: 1;
+  padding: 13px 20px; border-radius: 999px; border: 1.5px solid transparent;
+  text-decoration: none; cursor: pointer; white-space: nowrap;
+  transition: background-color .15s ease, transform .15s ease;
+}
+.btn:active { transform: translateY(1px); }
+.btn-gold { background: var(--gold); color: #3A2708; }
+.btn-gold:hover { background: #E4A84E; }
+.btn-teal { background: var(--teal); color: var(--cream); }
+.btn-teal:hover { background: var(--teal-deep); }
+.btn-ghost { border-color: rgba(246,241,231,.45); color: var(--cream); }
+.btn-ghost:hover { background: rgba(246,241,231,.12); }
+.btn-marigold { background: var(--marigold); color: #FFF4EC; }
+.btn-marigold:hover { background: #A94A24; }
+.btn-sm { padding: 9px 16px; font-size: 13.5px; }
+:where(a, button, input, select, textarea):focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+/* --------------------------------------------------------------- topbar */
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 40; background: rgba(252,250,245,.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.topbar-in { display: flex; align-items: center; gap: 16px; padding-block: 11px; }
+.brand { display: flex; align-items: center; gap: 11px; text-decoration: none; }
+.brand svg { flex: none; width: 38px; height: 26px; }
+.brand .wm { display: block; font-family: var(--display); font-size: clamp(19px, 4.4vw, 25px); font-weight: 600; line-height: 1; }
+.brand .wm em { font-style: italic; color: var(--teal); }
+.brand .city { display: block; font-size: 8.5px; font-weight: 700; letter-spacing: .38em; text-transform: uppercase; color: var(--ink-faint); margin-top: 3px; }
+.nav { margin-left: auto; display: flex; align-items: center; gap: 20px; }
+.nav a.lnk { font-size: 14px; font-weight: 600; color: var(--ink-soft); text-decoration: none; }
+.nav a.lnk:hover { color: var(--teal); }
+@media (max-width: 860px) { .nav a.lnk { display: none; } }
+
+/* ----------------------------------------------------------------- hero */
+.hero { background: var(--teal-night); color: var(--cream); position: relative; overflow: hidden; }
+.hero-in { position: relative; padding-block: clamp(54px, 8vw, 96px); }
+.hero-sun { position: absolute; top: -90px; left: 50%; transform: translateX(-50%); width: 560px; max-width: 108%; opacity: .13; pointer-events: none; }
+.hero h1 { font-size: clamp(36px, 6.2vw, 60px); letter-spacing: -.012em; max-width: 19ch; }
+.hero h1 em { font-style: italic; color: var(--gold-lt); }
+.hero-sub { margin-top: 20px; font-size: clamp(16px, 2vw, 18.5px); color: #CBDEDC; max-width: 56ch; }
+.hero-cta { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-meta { margin-top: 20px; font-size: 14px; color: #93B5B2; }
+.hero-meta b { color: var(--cream); font-weight: 600; }
+
+/* --------------------------------------------------- the three arches  */
+.arches { margin-top: clamp(40px, 6vw, 64px); display: grid; gap: 16px; grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 800px) { .arches { grid-template-columns: 1fr; } }
+.arch {
+  background: rgba(246,241,231,.055);
+  border: 1px solid rgba(246,241,231,.2);
+  border-radius: 180px 180px 4px 4px;
+  padding: 34px 24px 26px;
+  text-align: center;
+  min-width: 0;
+  text-decoration: none;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  transition: background-color .18s ease;
+}
+.arch:hover { background: rgba(246,241,231,.11); }
+.arch .n { font-size: 11px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: var(--gold-lt); }
+.arch h3 { font-size: clamp(23px, 2.6vw, 28px); color: var(--cream); }
+.arch p { font-size: 14px; color: #ADC8C6; }
+.arch .go { margin-top: 6px; font-size: 13px; font-weight: 700; color: var(--gold-lt); }
+
+/* ------------------------------------------------------------- outbound */
+.band-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.band-head .num { font-family: var(--display); font-size: 40px; font-weight: 600; color: var(--gold); line-height: 1; }
+.svc-grid { margin-top: 32px; display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.svc-grid { grid-template-columns: repeat(auto-fit, minmax(252px, 1fr)); }
+.svc { background: var(--paper); padding: 24px 22px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.svc h4 { font-size: 22px; color: var(--teal-deep); }
+.svc p { font-size: 14.5px; color: var(--ink-soft); }
+.svc .tags { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 6px; }
+.svc .tags span { font-size: 11.5px; font-weight: 700; letter-spacing: .04em; color: var(--teal); background: var(--teal-mist); padding: 4px 9px; border-radius: 3px; }
+
+/* --------------------------------------------- service-line lockups */
+/* The brand board's two accent motifs: the haveli stamp for Rajasthan Tours,
+   the marigold toran for Weddings. They switch on only for their own service
+   line — the master mark alone runs everything else. */
+.sublock { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; text-decoration: none; }
+.sublock svg { flex: none; }
+.sublock .wm { font-family: var(--display); font-size: clamp(24px, 3vw, 31px); font-weight: 600; line-height: 1.05; color: var(--ink); }
+.sublock .wm em { font-style: italic; color: #6E2532; }
+.sublock.on-dark .wm { color: var(--cream); }
+.sublock.on-dark .wm em { color: var(--gold-lt); }
+
+/* -------------------------------------------------------------- inbound */
+.inbound { background: var(--cream); }
+.in-grid { margin-top: 34px; display: grid; gap: 30px 44px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
+@media (max-width: 800px) { .in-grid { grid-template-columns: 1fr; } }
+.places { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(138px, 1fr)); }
+.place { background: var(--paper); border: 1px solid var(--line); border-radius: 90px 90px 3px 3px; padding: 20px 12px 14px; text-align: center; min-width: 0; }
+.place b { display: block; font-family: var(--display); font-size: 21px; font-weight: 600; color: var(--teal-deep); line-height: 1.2; }
+.place span { font-size: 11.5px; color: var(--ink-faint); }
+.in-list { display: flex; flex-direction: column; gap: 13px; margin-top: 4px; }
+.in-list div { padding-left: 18px; border-left: 2px solid var(--gold); }
+.in-list b { display: block; font-size: 15px; font-weight: 700; }
+.in-list span { font-size: 14px; color: var(--ink-soft); }
+
+/* ------------------------------------------------------------- weddings */
+.wed { background: #1E1512; color: #F6EFE9; position: relative; overflow: hidden; }
+.wed::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 14%, rgba(193,89,47,.30), transparent 42%),
+    radial-gradient(circle at 88% 78%, rgba(217,154,61,.20), transparent 46%);
+}
+.wed-in { position: relative; z-index: 1; }
+.wed h2 { color: #FBF3EC; }
+.wed .lede { color: #D8C6BB; }
+.toran { display: flex; gap: 12px; justify-content: flex-start; margin-bottom: 22px; }
+.toran i { width: 11px; height: 11px; border-radius: 50%; background: var(--marigold); display: block; }
+.toran i:nth-child(even) { background: var(--gold); height: 16px; border-radius: 6px; }
+.wed-grid { margin-top: 32px; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(238px, 1fr)); }
+.wed-card { background: rgba(246,239,233,.055); border: 1px solid rgba(246,239,233,.16); border-radius: 3px; padding: 22px 20px; min-width: 0; }
+.wed-card h4 { font-size: 21px; color: var(--gold-lt); margin-bottom: 6px; }
+.wed-card p { font-size: 14px; color: #CDBBB0; }
+.wed-cta { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.wed-note { font-size: 13.5px; color: #A8968B; }
+
+/* ------------------------------------------------------------ corporate */
+.corp { background: var(--teal); color: var(--cream); }
+.corp-in { display: grid; gap: 34px; grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); align-items: start; }
+@media (max-width: 800px) { .corp-in { grid-template-columns: 1fr; } }
+.corp .lede { color: #CBDEDC; }
+.corp-list { margin-top: 22px; display: flex; flex-direction: column; gap: 13px; }
+.corp-list div { padding-left: 18px; border-left: 2px solid var(--gold); }
+.corp-list b { display: block; font-size: 15px; font-weight: 700; }
+.corp-list span { font-size: 14px; color: #B4CECB; }
+.corp-card { background: rgba(8,56,55,.55); border: 1px solid rgba(246,241,231,.18); border-radius: 3px; padding: 24px 22px; }
+.corp-card h3 { font-size: 21px; color: var(--gold-lt); margin-bottom: 10px; }
+.corp-card p { font-size: 14.5px; color: #CBDEDC; }
+.corp-card .btn { margin-top: 18px; }
+
+/* ------------------------------------------- agent vs. booking portal */
+.versus { background: var(--cream); }
+.vs-table { margin-top: 30px; border: 1px solid var(--line); background: var(--line); display: grid; gap: 1px; }
+.vs-row { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,1fr) minmax(0,1fr); gap: 1px; background: var(--line); }
+.vs-row > * { background: var(--paper); padding: 16px 18px; min-width: 0; }
+.vs-row.head > * { background: var(--cream-lt); }
+.vs-row.head span { font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint); }
+.vs-row.head .us { color: var(--teal); }
+.vs-q { font-family: var(--display); font-size: 19px; font-weight: 600; color: var(--ink); line-height: 1.25; }
+.vs-them { font-size: 14px; color: var(--ink-faint); }
+.vs-us { font-size: 14px; color: var(--ink); background: #F4F9F8 !important; border-left: 2px solid var(--teal); }
+.vs-us b { color: var(--teal-deep); }
+@media (max-width: 780px) {
+  .vs-row { grid-template-columns: 1fr; }
+  .vs-row.head { display: none; }
+  .vs-q { padding-bottom: 6px; }
+  .vs-them::before { content: 'Booking portal — '; font-weight: 700; color: var(--ink-faint); }
+  .vs-us::before { content: 'Aasha Tours — '; font-weight: 700; color: var(--teal-deep); }
+}
+.vs-fair { margin-top: 20px; font-size: 14.5px; color: var(--ink-soft); max-width: 66ch; border-left: 2px solid var(--gold); padding-left: 16px; }
+
+/* ------------------------------------------------------------------ why */
+.why-grid { margin-top: 32px; display: grid; gap: 28px 40px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.why-item h3 { font-size: 21px; color: var(--teal-deep); margin-bottom: 6px; }
+.why-item p { font-size: 14.5px; color: var(--ink-soft); }
+.team-grid { margin-top: 30px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(206px, 1fr)); }
+.person { border-top: 2px solid var(--line); padding-top: 13px; min-width: 0; }
+.person b { display: block; font-family: var(--display); font-size: 22px; font-weight: 600; line-height: 1.2; }
+.person span { font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+
+/* -------------------------------------------------------------- reviews */
+.rev { background: var(--teal-mist); }
+.rev-head { display: flex; flex-wrap: wrap; gap: 18px 34px; align-items: flex-end; }
+.score { display: flex; align-items: baseline; gap: 10px; }
+.score b { font-family: var(--display); font-size: clamp(50px, 7vw, 68px); font-weight: 700; color: var(--teal-deep); line-height: .9; font-variant-numeric: tabular-nums; }
+.score .of { font-size: 15px; color: var(--ink-soft); }
+.stars { display: flex; gap: 3px; }
+.stars svg { width: 19px; height: 19px; fill: var(--gold); }
+.score-meta { font-size: 14.5px; color: var(--ink-soft); }
+.score-meta a { color: var(--teal); font-weight: 700; text-decoration: none; }
+.score-meta a:hover { text-decoration: underline; }
+/* A wall rather than a row: the reviews are different lengths and forcing them
+   to a common height would either clip them or pad them with dead space. */
+.rev-grid { margin-top: 30px; columns: 3 280px; column-gap: 14px; }
+.rev-card { break-inside: avoid; margin-bottom: 14px; background: var(--paper); border: 1px solid #C6DAD8; border-radius: 3px; padding: 22px 20px; display: flex; flex-direction: column; gap: 11px; min-width: 0; }
+.rev-card .stars svg { width: 15px; height: 15px; }
+.rev-card blockquote { margin: 0; font-size: 14.8px; line-height: 1.6; color: var(--ink); }
+.rev-card blockquote p + p { margin-top: 9px; }
+.rev-card footer { margin-top: auto; padding: 0; background: none; display: flex; flex-direction: column; gap: 1px; }
+.rev-card cite { font-style: normal; font-weight: 700; font-size: 14.5px; color: var(--teal-deep); }
+.rev-card time { font-size: 12.5px; color: var(--ink-faint); }
+.rev-foot { margin-top: 22px; font-size: 13px; color: var(--ink-soft); }
+
+/* ----------------------------------------------------------------- form */
+.enq { background: var(--cream); }
+.enq-in { display: grid; gap: 36px; grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr); align-items: start; }
+@media (max-width: 800px) { .enq-in { grid-template-columns: 1fr; } }
+.form-card { background: var(--paper); border: 1px solid var(--line); border-radius: 3px; padding: 26px 24px; }
+.field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+.field label { font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-soft); }
+.field input, .field select, .field textarea {
+  font-family: var(--body); font-size: 15px; color: var(--ink);
+  padding: 11px 13px; border: 1px solid var(--line); border-radius: 2px;
+  background: var(--cream-lt); width: 100%; min-width: 0;
+}
+.field textarea { resize: vertical; min-height: 84px; }
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--teal); background: var(--paper); }
+.form-row { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
+@media (max-width: 480px) { .form-row { grid-template-columns: 1fr; } }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form-note { margin-top: 12px; font-size: 12.5px; color: var(--ink-faint); }
+.form-msg { margin-top: 14px; font-size: 14.5px; padding: 13px 15px; border-radius: 2px; line-height: 1.55; }
+.form-msg.ok { background: var(--teal-mist); color: var(--teal-deep); border: 1px solid #BBD6D4; }
+.form-msg.warn { background: #FDF3E4; color: #7A4D14; border: 1px solid #EFD9B4; }
+.form-msg a { font-weight: 700; }
+
+/* -------------------------------------------------------------- contact */
+.contact-grid { margin-top: 28px; display: grid; gap: 26px 40px; grid-template-columns: repeat(auto-fit, minmax(212px, 1fr)); }
+.cblock h3 { font-size: 13px; font-family: var(--body); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.cblock p, .cblock a { font-size: 15px; color: var(--ink-soft); line-height: 1.6; }
+.cblock .big { font-size: 20px; font-weight: 700; color: var(--teal-deep); }
+.cblock a { text-decoration: none; }
+.cblock a:hover { text-decoration: underline; }
+
+.stafflink { color: #7FA5A2; text-decoration: none; border-bottom: 1px dotted rgba(127,165,162,.5); }
+.stafflink:hover { color: var(--gold-lt); border-bottom-color: currentColor; }
+footer { background: var(--teal-night); color: #93B5B2; padding-block: 30px; font-size: 13px; }
+.foot-in { display: flex; flex-wrap: wrap; gap: 12px 26px; align-items: center; }
+.foot-in .sep { margin-left: auto; }
+@media (max-width: 620px) { .foot-in .sep { margin-left: 0; } }
+
+.wa-float { position: fixed; right: 16px; bottom: 16px; z-index: 50; padding-bottom: env(safe-area-inset-bottom, 0px); }
+.wa-float a { display: flex; align-items: center; gap: 9px; text-decoration: none; background: #1FA855; color: #fff; font-weight: 700; font-size: 14.5px; padding: 13px 19px; border-radius: 999px; box-shadow: 0 6px 20px rgba(0,0,0,.24); }
+.wa-float svg { width: 19px; height: 19px; flex: none; }
+@media (max-width: 480px) { .wa-float a span { display: none; } .wa-float a { padding: 15px; } }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap gutter topbar-in">
+    <a class="brand" href="#top">
+      <svg viewBox="5 48 190 132" aria-hidden="true">
+        <path d="M 28 125 A 72 72 0 0 1 172 125 Z" fill="#D99A3D"/>
+        <line x1="10" y1="125" x2="190" y2="125" stroke="#0E5E5B" stroke-width="8"/>
+        <path d="M 40 125 A 60 20 0 0 0 160 125 Z" fill="#D99A3D" opacity="0.28"/>
+        <line x1="55" y1="155" x2="145" y2="155" stroke="#0E5E5B" stroke-width="6" opacity="0.28"/>
+        <line x1="70" y1="172" x2="130" y2="172" stroke="#0E5E5B" stroke-width="6" opacity="0.18"/>
+      </svg>
+      <span><span class="wm">Aasha <em>Tours</em></span><span class="city">Udaipur</span></span>
+    </a>
+    <nav class="nav">
+      <a class="lnk" href="#outbound">Travelling out</a>
+      <a class="lnk" href="#inbound">Rajasthan tours</a>
+      <a class="lnk" href="weddings.html">Weddings</a>
+      <a class="lnk" href="#corporate">Corporate</a>
+      <a class="lnk" href="#why-agent">Why an agent</a>
+      <a class="lnk" href="#reviews">Reviews</a>
+      <a class="btn btn-teal btn-sm" href="#enquire">Get a quote</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================================================================ hero -->
+<div class="hero" id="top">
+  <svg class="hero-sun" viewBox="0 0 200 200" aria-hidden="true">
+    <path d="M 28 125 A 72 72 0 0 1 172 125 Z" fill="#D99A3D"/>
+    <line x1="10" y1="125" x2="190" y2="125" stroke="#F6F1E7" stroke-width="8"/>
+    <path d="M 40 125 A 60 20 0 0 0 160 125 Z" fill="#F6F1E7" opacity="0.20"/>
+    <line x1="55" y1="155" x2="145" y2="155" stroke="#F6F1E7" stroke-width="6" opacity="0.28"/>
+    <line x1="70" y1="172" x2="130" y2="172" stroke="#F6F1E7" stroke-width="6" opacity="0.18"/>
+  </svg>
+  <div class="wrap gutter hero-in">
+    <p class="eyebrow light">IATA Accredited · Udaipur, Rajasthan · More than 15 years</p>
+    <h1>We take Udaipur out into the world — and bring the world <em>into Rajasthan</em>.</h1>
+    <p class="hero-sub">
+      Tickets, visas and holidays for families and businesses here. Tours across Rajasthan for
+      visitors arriving. And full planning for the weddings this city is known for.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="#enquire">Tell us your trip</a>
+      <a class="btn btn-ghost" href="https://wa.me/919982206401">Message on WhatsApp</a>
+    </div>
+    <p class="hero-meta">Shop No. 1, Moti Magri Scheme, Udaipur &nbsp;·&nbsp; Mon–Sat 10am–7pm &nbsp;·&nbsp; <b>+91 99822 06401</b></p>
+    <p class="hero-meta" style="margin-top:8px;">Booking travel for Udaipur families and businesses for <b>more than fifteen years</b>.</p>
+
+    <div class="arches">
+      <a class="arch" href="#outbound">
+        <span class="n">Going out</span>
+        <h3>Travel from Udaipur</h3>
+        <p>Air tickets, visas, insurance, hotels and package tours — for people here going anywhere.</p>
+        <span class="go">See what we handle →</span>
+      </a>
+      <a class="arch" href="#inbound">
+        <span class="n">Coming in</span>
+        <h3>Tours of Rajasthan</h3>
+        <p>Itineraries, cars, hotels and guides across the state, arranged by people who live here.</p>
+        <span class="go">Plan a Rajasthan trip →</span>
+      </a>
+      <a class="arch" href="weddings.html">
+        <span class="n">Coming together</span>
+        <h3>Destination weddings</h3>
+        <p>Planned end to end in Udaipur and across Rajasthan — venue, functions and every guest.</p>
+        <span class="go">Plan a wedding →</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ outbound -->
+<section id="outbound">
+  <div class="wrap gutter">
+    <div class="band-head">
+      <span class="num">01</span>
+      <div>
+        <p class="eyebrow">Travelling out of Udaipur</p>
+        <h2 class="h2">Six things, done properly.</h2>
+      </div>
+    </div>
+    <p class="lede">
+      Most of our customers live here and are travelling out — for work, for family abroad, for a
+      holiday, for a pilgrimage. When a flight changes at midnight, you call a person in Udaipur,
+      not a helpline.
+    </p>
+
+    <div class="svc-grid">
+      <article class="svc">
+        <h4>Air Ticketing</h4>
+        <p>Domestic and international, issued directly as an accredited agent rather than resold.</p>
+        <div class="tags"><span>Date changes</span><span>Group bookings</span><span>GST invoice</span></div>
+      </article>
+      <article class="svc">
+        <h4>Visa Services</h4>
+        <p>Documentation, appointments and follow-up. Most rejections are paperwork, not bad luck.</p>
+        <div class="tags"><span>Tourist</span><span>Business</span><span>Visit</span></div>
+      </article>
+      <article class="svc">
+        <h4>Package Tours</h4>
+        <p>Built to a budget you set. Two or three costed options so you can compare properly.</p>
+        <div class="tags"><span>Domestic</span><span>International</span><span>Groups</span></div>
+      </article>
+      <article class="svc">
+        <h4>Hotel Booking</h4>
+        <p>Rooms confirmed in writing, with a voucher you can hand over at the desk.</p>
+        <div class="tags"><span>Meal plan stated</span><span>Multi-city</span></div>
+      </article>
+      <article class="svc">
+        <h4>Travel Insurance</h4>
+        <p>Arranged alongside the ticket, including the cover consulates insist on.</p>
+        <div class="tags"><span>Schengen</span><span>Senior citizen</span><span>Student</span></div>
+      </article>
+
+      <article class="svc">
+        <h4>Group Tours &amp; MICE</h4>
+        <p>Conferences, dealer meets, incentive trips and large family groups — moved, housed and run to a schedule.</p>
+        <div class="tags"><span>Conferences</span><span>Incentive trips</span><span>Dealer meets</span><span>Large groups</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= inbound -->
+<section class="inbound" id="inbound">
+  <div class="wrap gutter">
+    <div class="sublock">
+      <svg width="52" height="52" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="21" fill="none" stroke="#B25D38" stroke-width="1.5"
+                stroke-dasharray="1.6 3.1" stroke-linecap="round"/>
+        <path d="M17 33 L17 22.5 A7 7 0 0 1 31 22.5 L31 33 Z" fill="#B25D38"/>
+        <circle cx="24" cy="12" r="1.9" fill="#B25D38"/>
+      </svg>
+      <span class="wm">Aasha Tours <em>Rajasthan Tours</em></span>
+    </div>
+    <p class="eyebrow">Coming to Rajasthan</p>
+    <h2 class="h2">Tours of Rajasthan, run from inside it.</h2>
+    <p class="lede">
+      We are not an agency in another city booking Rajasthan from a screen. Our office is in
+      Udaipur. We know which fort is worth the climb in May, which road is being dug up, and which
+      hotel's lake view is actually a lake view.
+    </p>
+
+    <div class="in-grid">
+      <div>
+        <div class="places">
+          <div class="place"><b>Udaipur</b><span>Lakes and palaces</span></div>
+          <div class="place"><b>Jodhpur</b><span>The blue city</span></div>
+          <div class="place"><b>Jaisalmer</b><span>Desert and dunes</span></div>
+          <div class="place"><b>Jaipur</b><span>The pink city</span></div>
+          <div class="place"><b>Pushkar</b><span>Temples and fair</span></div>
+          <div class="place"><b>Kumbhalgarh</b><span>Fort and wall</span></div>
+          <div class="place"><b>Ranakpur</b><span>Marble temples</span></div>
+          <div class="place"><b>Mount Abu</b><span>Hill station</span></div>
+        </div>
+      </div>
+      <div class="in-list">
+        <div>
+          <b>Itineraries that match the season</b>
+          <span>A Rajasthan itinerary that works in December will not work in May. We plan around the heat, the fairs and the festival dates.</span>
+        </div>
+        <div>
+          <b>Cars and drivers, not a taxi app</b>
+          <span>The same driver for the whole circuit, who knows the route and speaks to the hotels.</span>
+        </div>
+        <div>
+          <b>Hotels from heritage to simple</b>
+          <span>Palace properties, havelis and clean straightforward hotels — whichever the budget calls for, confirmed in writing.</span>
+        </div>
+        <div>
+          <b>Guides and airport transfers</b>
+          <span>Licensed local guides at each city, and someone waiting when the flight lands.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ weddings -->
+<section class="wed" id="weddings">
+  <div class="wrap gutter wed-in">
+    <div class="toran" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <a class="sublock on-dark" href="weddings.html">
+      <svg width="60" height="34" viewBox="0 0 60 34" aria-hidden="true">
+        <circle cx="4.6"  cy="32.2" r="2.1" fill="#E8BE7C"/>
+        <circle cx="10.8" cy="23.6" r="2.3" fill="#D99A3D"/>
+        <circle cx="19.6" cy="18.0" r="2.4" fill="#E8BE7C"/>
+        <circle cx="30"   cy="16.0" r="2.5" fill="#D99A3D"/>
+        <circle cx="40.4" cy="18.0" r="2.4" fill="#E8BE7C"/>
+        <circle cx="49.2" cy="23.6" r="2.3" fill="#D99A3D"/>
+        <circle cx="55.4" cy="32.2" r="2.1" fill="#E8BE7C"/>
+      </svg>
+      <span class="wm">Aasha Tours <em>Weddings</em></span>
+    </a>
+    <p class="eyebrow marigold">Destination weddings</p>
+    <h2 class="h2">Udaipur is where people get married. We plan the wedding and we get everyone here.</h2>
+    <p class="lede">
+      We plan the whole wedding — the venue, the look, the food, every function — and we move the
+      two hundred people who have to be there. Most planners hand the travel to an agency.
+      <b style="color:#F0DCCE;font-weight:700;">We are the agency.</b>
+    </p>
+
+    <div class="wed-grid">
+      <div class="wed-card">
+        <h4>The whole wedding</h4>
+        <p>Venue, decor, catering, every function and every vendor — planned and run, from the first site visit to the last departure.</p>
+      </div>
+      <div class="wed-card">
+        <h4>Across Rajasthan</h4>
+        <p>Udaipur first, and Jaipur, Jodhpur, Jaisalmer, Mount Abu and Kumbhalgarh — palace hotels, lakeside lawns and heritage havelis.</p>
+      </div>
+      <div class="wed-card">
+        <h4>Every guest, moved and housed</h4>
+        <p>Flights, visas for family flying in, room blocks and cars against real arrival times. The part planners subcontract and we do ourselves.</p>
+      </div>
+    </div>
+
+    <div class="wed-cta">
+      <a class="btn btn-marigold" href="weddings.html">See how we plan a wedding →</a>
+      <span class="wed-note">A page of its own — what we take on, the venues, and the six steps from first call to the week itself.</span>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================== corporate -->
+<section class="corp" id="corporate">
+  <div class="wrap gutter corp-in">
+    <div>
+      <p class="eyebrow light">For Udaipur businesses</p>
+      <h2 class="h2">Corporate travel, handled off your desk.</h2>
+      <p class="lede">
+        Factories, exporters and firms here send people out constantly — buyers abroad, trade
+        fairs, plant visits, engineers on site. We run that travel so your office staff do not
+        have to.
+      </p>
+      <div class="corp-list">
+        <div><b>Proper GST invoices, every time</b><span>Billed to the company, with what your accounts team needs to claim input credit.</span></div>
+        <div><b>Business visas for your team</b><span>Covering letters, invitations and appointments for several travellers at once.</span></div>
+        <div><b>Changes handled while you work</b><span>A meeting moves, the ticket moves. One message to us and it is done.</span></div>
+        <div><b>One named point of contact</b><span>Someone who learns your travel policy and your people's preferences.</span></div>
+      </div>
+    </div>
+    <aside class="corp-card">
+      <h3>Talk to us about a company account</h3>
+      <p>
+        Tell us roughly how often your team travels and where. We will come back with how we would
+        handle it and what it would cost — no obligation, no charge for the conversation.
+      </p>
+      <a class="btn btn-gold" href="#enquire">Start the conversation</a>
+    </aside>
+  </div>
+</section>
+
+<!-- ============================================== agent vs booking portal -->
+<section class="versus" id="why-agent">
+  <div class="wrap gutter">
+    <p class="eyebrow">Agent or portal</p>
+    <h2 class="h2">The portal is cheaper right up until something goes wrong.</h2>
+    <p class="lede">
+      A booking site is a shop counter. It sells you the ticket and the relationship ends there.
+      That is fine on a good day. Most days are good days.
+    </p>
+
+    <div class="vs-table">
+      <div class="vs-row head">
+        <span>When this happens</span>
+        <span>A booking portal</span>
+        <span class="us">Aasha Tours</span>
+      </div>
+      <div class="vs-row">
+        <div class="vs-q">Your 6am flight is cancelled the night before</div>
+        <div class="vs-them">A chatbot, a helpline queue, and a refund in 7–10 working days.</div>
+        <div class="vs-us">You call us. We hold the ticket stock, so we <b>rebook you</b> while you are still on the phone.</div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-q">You need a visa</div>
+        <div class="vs-them">Not offered. You are on your own with the consulate's checklist.</div>
+        <div class="vs-us">We build the file, book the appointment and track it. <b>Most rejections are paperwork</b>, and paperwork is what we do.</div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-q">Eleven of you are travelling, on three different budgets</div>
+        <div class="vs-them">Eleven separate bookings, and you are the one reconciling them.</div>
+        <div class="vs-us"><b>One booking, one bill, one person</b> holding the whole thing together.</div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-q">The company needs a GST invoice for input credit</div>
+        <div class="vs-them">A generic invoice, often from a gateway in another state.</div>
+        <div class="vs-us">A proper invoice from a <b>GST-registered agent in Udaipur</b>, made out to your company.</div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-q">You want to change a date after booking</div>
+        <div class="vs-them">Change fees, a form, and whatever the portal chooses to pass on.</div>
+        <div class="vs-us">We handle it with the airline directly. <b>You send one message.</b></div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-q">Something goes wrong at 11pm in a foreign country</div>
+        <div class="vs-them">An international helpline, and a time zone that is not yours.</div>
+        <div class="vs-us">A number in Udaipur that a person you have met answers.</div>
+      </div>
+    </div>
+
+    <p class="vs-fair">
+      To be straight with you: for a simple one-way domestic hop booked three weeks out,
+      a portal is quick and the fare is usually fine. Use one. It is everything
+      else — visas, groups, international routings, anything with a date that might move,
+      anything a company has to account for — where having an agent stops being a
+      preference and starts being the difference.
+    </p>
+  </div>
+</section>
+
+<!-- ================================================================= why -->
+<section>
+  <div class="wrap gutter">
+    <p class="eyebrow">Why book through us</p>
+    <h2 class="h2">Based in Udaipur, not booking it from a screen.</h2>
+    <div class="why-grid">
+      <div class="why-item">
+        <h3>IATA accreditation</h3>
+        <p>An accredited agent issues tickets directly rather than buying through a third party and marking them up. It also means airlines deal with us on your booking.</p>
+      </div>
+      <div class="why-item">
+        <h3>A named person, not a ticket number</h3>
+        <p>Whoever takes your enquiry keeps your file through to the trip itself. You are never explaining the situation again to a stranger.</p>
+      </div>
+      <div class="why-item">
+        <h3>We live where you are going</h3>
+        <p>For a Rajasthan trip that matters more than any brochure. For a trip out of Udaipur it means we are twenty minutes away when something needs fixing.</p>
+      </div>
+      <div class="why-item">
+        <h3>An address you can come to</h3>
+        <p>Moti Magri Scheme, near the Brahma Kumaris Ashram. Bring the passports, sit down, have it sorted in one visit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== reviews -->
+<section class="rev" id="reviews">
+  <div class="wrap gutter">
+    <p class="eyebrow">What our customers say</p>
+    <div class="rev-head">
+      <div class="score">
+        <b>5.0</b>
+        <div>
+          <div class="stars" role="img" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <span class="of">24 reviews on Google</span>
+        </div>
+      </div>
+      <p class="score-meta">
+        Every one of these is a real review left on our Google listing.<br>
+        <a href="https://www.google.com/maps/place/Aasha+Tours/@24.5960475,73.6864244,17z/data=!3m1!4b1!4m6!3m5!1s0x3967e5eaaaaaaaa9:0x6ce969121ad8efad!8m2!3d24.5960475!4d73.6864244!16s%2Fg%2F11c7v_3b95" target="_blank" rel="noopener">Read all 24 on Google →</a>
+      </p>
+    </div>
+
+    <div class="rev-grid">
+      <article class="rev-card">
+        <div class="stars" role="img" aria-label="5 out of 5">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>
+          <p>We have been associated with Aasha tours since 15 years. One of the best teams. Recently we visited Vietnam. Thanks to Ankit, Kailash and team for an amazing hassle free well planned trip. Keep it going.</p>
+        </blockquote>
+        <footer><cite>Chirayu Pamecha</cite><time>Jun 2022 &middot; on Google</time></footer>
+      </article>
+
+      <article class="rev-card">
+        <div class="stars" role="img" aria-label="5 out of 5">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>
+          <p>One of the best place to make your vacation hustle free, luxurious, Price friendly and comfortable.</p>
+          <p>I,ve been booking flights ,hotels and packages from them since 5 years and services are so good that you can&#39;t even refuse to take. I must say visit them and experience Luxurious travel.</p>
+        </blockquote>
+        <footer><cite>Aaryan Sen</cite><time>Mar 2025 &middot; on Google</time></footer>
+      </article>
+
+      <article class="rev-card">
+        <div class="stars" role="img" aria-label="5 out of 5">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>
+          <p>Many times we have planned our national and international tours and hotel bookings from Aasha tours. And we have faced no problems during the travel and if it happens by any reasons then the tour company resolves it within seconds.</p>
+          <p>One of the only best tours company in udaipur. They are humble people and services is also good.</p>
+          <p>Through so many years of satisfied and hassle free travel im writing this review so that if you are thinking of from where you should plan your tour then yess you are at the right place</p>
+        </blockquote>
+        <footer><cite>Ashish Patel</cite><time>Oct 2023 &middot; on Google</time></footer>
+      </article>
+
+      <article class="rev-card">
+        <div class="stars" role="img" aria-label="5 out of 5">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>
+          <p>Had an amazing Dubai vacation thanks to Asha Tours, Udaipur! The entire trip was well-organized, hassle-free, and great value for money. Highly recommend them for their professionalism and excellent support throughout the journey.</p>
+        </blockquote>
+        <footer><cite>Manrup Mor</cite><time>Jan 2026 &middot; on Google</time></footer>
+      </article>
+
+      <article class="rev-card">
+        <div class="stars" role="img" aria-label="5 out of 5">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>
+          <p>Our family travelled to Dubai with Aasha Tours , the trip truly defined bespoke luxury and comfort . Immensely grateful to Mr. Ankit Sisodia &amp; Aasha Tours Team for planning the most memorable for our family. We look forward to travel with them in future too.</p>
+        </blockquote>
+        <footer><cite>Aditi Ranawat</cite><time>Mar 2025 &middot; on Google</time></footer>
+      </article>
+
+      <article class="rev-card">
+        <div class="stars" role="img" aria-label="5 out of 5">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote>
+          <p>Thank you so much asha tour&rsquo;s because of you our trip was the best and memorable too. I would like to sincerely thank you for making our Sikkim trip such a memorable and enjoyable experience. Your excellent planning, attention to detail, and constant support throughout the journey made everything smooth and stress-free.</p>
+          <p>From coordinating travel and accommodation to sharing helpful insights and ensuring our safety, your efforts truly made a difference. Your friendly attitude and professionalism added to the joy of the trip.</p>
+        </blockquote>
+        <footer><cite>Nisha Rajput</cite><time>Jun 2025 &middot; on Google</time></footer>
+      </article>
+    </div>
+
+    <p class="rev-foot">Reviews are shown as they were written. Nothing has been edited.</p>
+  </div>
+</section>
+
+<!-- ============================================================= enquire -->
+<section class="enq" id="enquire">
+  <div class="wrap gutter enq-in">
+    <div>
+      <p class="eyebrow">Tell us your trip</p>
+      <h2 class="h2">Send the details once. We come back with a quotation.</h2>
+      <p class="lede">
+        Where you are going — or coming from — roughly when, and how many of you. That is enough to
+        start. If you would rather just talk, the number below reaches the office directly.
+      </p>
+      <p style="margin-top:22px;">
+        <span style="display:block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:4px;">Call or WhatsApp</span>
+        <a href="tel:+919982206401" style="font-family:var(--display);font-size:30px;font-weight:600;color:var(--teal-deep);text-decoration:none;">+91 99822 06401</a>
+      </p>
+    </div>
+
+    <form class="form-card" id="enquiry-form" novalidate>
+      <div class="field">
+        <label for="f-name">Your name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="f-phone">Phone / WhatsApp</label>
+          <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+        </div>
+        <div class="field">
+          <label for="f-email">Email (optional)</label>
+          <input id="f-email" name="email" type="email" autocomplete="email">
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-service">What do you need</label>
+        <select id="f-service" name="services_interested">
+          <option>Air Ticketing</option>
+          <option>Visa Services</option>
+          <option>Package Tour</option>
+          <option>Hotel Booking</option>
+          <option>Travel Insurance</option>
+          <option>Rajasthan tour (visiting)</option>
+          <option>Destination wedding</option>
+          <option>Corporate travel account</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-notes">Where to, when, how many</label>
+        <textarea id="f-notes" name="notes" placeholder="e.g. Dubai for 5 nights in December, 2 adults and 1 child aged 6. Need visa as well."></textarea>
+      </div>
+      <div class="hp" aria-hidden="true">
+        <label for="f-company">Company</label>
+        <input id="f-company" name="company" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <button class="btn btn-teal" type="submit" id="f-submit" style="width:100%;">Send enquiry</button>
+      <p class="form-note">We reply during office hours, Monday to Saturday. Your details are not shared with anyone.</p>
+      <div id="form-msg" hidden></div>
+    </form>
+  </div>
+</section>
+
+<!-- ============================================================== contact -->
+<section id="contact">
+  <div class="wrap gutter">
+    <p class="eyebrow">Come and see us</p>
+    <h2 class="h2">Aasha Tours, Moti Magri Scheme.</h2>
+    <div class="contact-grid">
+      <div class="cblock">
+        <h3>Office</h3>
+        <p>Shop No. 1, Moti Magri Scheme<br>Near Brahma Kumaris Ashram<br>Udaipur 313001, Rajasthan</p>
+        <p style="margin-top:10px;"><a href="https://www.google.com/maps/search/?api=1&amp;query=Aasha+Tours+Moti+Magri+Scheme+Udaipur" target="_blank" rel="noopener" style="color:var(--teal);font-weight:600;">Open in Google Maps →</a></p>
+      </div>
+      <div class="cblock">
+        <h3>Phone &amp; WhatsApp</h3>
+        <p class="big">+91 99822 06401</p>
+        <p style="margin-top:6px;">Monday to Saturday, 10am – 7pm</p>
+      </div>
+      <div class="cblock">
+        <h3>Email</h3>
+        <p><a href="mailto:ankit@aashatours.com">ankit@aashatours.com</a></p>
+        <p style="margin-top:6px;">Replies within one working day.</p>
+      </div>
+      <div class="cblock">
+        <h3>Registration</h3>
+        <p>IATA Accredited Agent</p>
+        <p>GSTIN 08BXRPS6950E1ZT</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap gutter foot-in">
+    <span>© <span id="yr">2026</span> Aasha Tours, Udaipur</span>
+    <span>Your Trusted Travel Partner, Udaipur</span>
+    <span class="sep">GSTIN 08BXRPS6950E1ZT</span>
+    <span><a class="stafflink" href="https://aashatours-crm-v2.vercel.app/login" target="_blank" rel="noopener">Staff login</a></span>
+  </div>
+</footer>
+
+<div class="wa-float">
+  <a href="https://wa.me/919982206401" aria-label="Message Aasha Tours on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1s-.8 1-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6l-.9-2.2c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.5-.3M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.8L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2"/></svg>
+    <span>WhatsApp us</span>
+  </a>
+</div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var LEAD_ENDPOINT = 'https://aashatours-crm-v2.vercel.app/api/public/lead';
+  var WA_NUMBER = '919982206401';
+
+  var form = document.getElementById('enquiry-form');
+  var msg = document.getElementById('form-msg');
+  var submitBtn = document.getElementById('f-submit');
+
+  function show(kind, html) {
+    msg.className = 'form-msg ' + kind;
+    msg.innerHTML = html;
+    msg.hidden = false;
+  }
+  function waLink(text) { return 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text); }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var data = {
+      name: document.getElementById('f-name').value.trim(),
+      phone: document.getElementById('f-phone').value.trim(),
+      email: document.getElementById('f-email').value.trim(),
+      services_interested: document.getElementById('f-service').value,
+      notes: document.getElementById('f-notes').value.trim(),
+      company: document.getElementById('f-company').value
+    };
+    if (!data.name) { show('warn', 'Please add your name so we know who to reply to.'); document.getElementById('f-name').focus(); return; }
+    if (!data.phone) { show('warn', 'Please add a phone number — that is how we will reach you.'); document.getElementById('f-phone').focus(); return; }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+
+    var summary = 'Enquiry from the website\n\nName: ' + data.name +
+      '\nPhone: ' + data.phone +
+      (data.email ? '\nEmail: ' + data.email : '') +
+      '\nService: ' + data.services_interested +
+      (data.notes ? '\nDetails: ' + data.notes : '');
+
+    fetch(LEAD_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    })
+      .then(function (r) {
+        if (!r.ok) throw new Error('rejected');
+        form.reset();
+        show('ok', '<b>Thanks, ' + data.name.split(' ')[0].replace(/[<>&]/g, '') + '.</b> We have your enquiry and will come back with a quotation. If it is urgent, WhatsApp us on +91 99822 06401.');
+      })
+      .catch(function () {
+        show('warn', 'We could not send that from here. Please <a href="' + waLink(summary) + '" target="_blank" rel="noopener">send it on WhatsApp instead</a>, or call +91 99822 06401.');
+      })
+      .then(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send enquiry';
+      });
+  });
+</script>
+
+</body>
+</html>
