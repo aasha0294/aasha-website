@@ -289,12 +289,12 @@ section { padding-block: clamp(50px, 7vw, 88px); }
 .cblock a { text-decoration: none; }
 .cblock a:hover { text-decoration: underline; }
 
-.stafflink { color: #7FA5A2; text-decoration: none; border-bottom: 1px dotted rgba(127,165,162,.5); }
-.stafflink:hover { color: var(--gold-lt); border-bottom-color: currentColor; }
 footer { background: var(--teal-night); color: #93B5B2; padding-block: 30px; font-size: 13px; }
 .foot-in { display: flex; flex-wrap: wrap; gap: 12px 26px; align-items: center; }
-.foot-in .sep { margin-left: auto; }
-@media (max-width: 620px) { .foot-in .sep { margin-left: 0; } }
+/* Keep the row clear of the floating WhatsApp button, which only shows its
+   full pill at desktop width; on a phone it is a small circle and the
+   footer items stack above it. */
+@media (min-width: 621px) { .foot-in { padding-right: 170px; } }
 
 .wa-float { position: fixed; right: 16px; bottom: 16px; z-index: 50; padding-bottom: env(safe-area-inset-bottom, 0px); }
 .wa-float a { display: flex; align-items: center; gap: 9px; text-decoration: none; background: #1FA855; color: #fff; font-weight: 700; font-size: 14.5px; padding: 13px 19px; border-radius: 999px; box-shadow: 0 6px 20px rgba(0,0,0,.24); }
@@ -855,7 +855,6 @@ footer { background: var(--teal-night); color: #93B5B2; padding-block: 30px; fon
     <span>© <span id="yr">2026</span> Aasha Tours, Udaipur</span>
     <span>Your Trusted Travel Partner, Udaipur</span>
     <span class="sep">GSTIN 08BXRPS6950E1ZT</span>
-    <span><a class="stafflink" href="https://crm.aashatours.com/login" target="_blank" rel="noopener">Staff login</a></span>
   </div>
 </footer>
 
